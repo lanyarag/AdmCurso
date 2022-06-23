@@ -1,20 +1,22 @@
 ﻿namespace AdmCurso
 {
-    class Administracao
+    abstract class Administracao
     {
-        public abstract void Cadastrar();
+        public abstract void Cadastrar(Aluno aluno);
 
-        public abstract void Remover();
+        public abstract void Remover(Aluno aluno);
 
-        public void Atualizar()
+        public virtual void Atualizar(Aluno aluno, int index)
         {
 
         }
-
-        public void ApresentarTodos()
+        public virtual void ApresentarTodos()
         {
 
         }
     }
 }
+
+
+
 

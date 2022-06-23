@@ -20,16 +20,16 @@
             alunos.Remove(aluno);
         }
 
-        void Atualizar()
+        public override void Atualizar(Aluno aluno, int index)
         {
-
+            alunos[index] = aluno;
         }
 
-        void ApresentarTodos()
+        public override void ApresentarTodos()
         {
-            foreach (var aluno in alunos)
+            foreach (Aluno aluno in alunos)
             {
-                Console.WriteLine(aluno);
+                Console.WriteLine(aluno.Nome);
             }
         }
     }

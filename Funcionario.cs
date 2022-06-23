@@ -1,6 +1,6 @@
 ﻿namespace AdmCurso
 {
-    class Funcionario
+    public class Funcionario
     {
         string Nome;
         string Sobrenome;
